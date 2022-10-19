@@ -3,8 +3,19 @@
     src: url("../fonts/PlusJakartaSans-VariableFont_wght.ttf") format('truetype');
 }
 $font-family: "Plus Jakarta Sans";
+$primary1: hsl(1, 90%, 64%);
+$primary2: hsl(219, 85%, 26%);
+$white: hsl(0, 0%, 100%);
+$neutral1: hsl(210, 60%, 98%);
+$neutral2: hsl(211, 68%, 94%);
+$neutral3: hsl(205, 33%, 90%);
+$neutral4: hsl(219, 14%, 63%);
+$neutral5: hsl(219, 12%, 42%);
+$neutral6: hsl(224, 21%, 14%);
 
 body{
     font-size: 1rem;
     font-family: $font-family;
+    background-color: $neutral1;
+    font-weight: 500;
 }
