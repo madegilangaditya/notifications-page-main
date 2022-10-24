@@ -1,7 +1,15 @@
 @font-face {
     font-family: "Plus Jakarta Sans";
-    src: url("../fonts/PlusJakartaSans-VariableFont_wght.ttf") format('truetype');
+    src: url("../fonts/static/PlusJakartaSans-Medium.ttf") format('truetype');
+    font-weight: medium;
 }
+
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("../fonts/static/PlusJakartaSans-ExtraBold.ttf") format('truetype');
+    font-weight: 800;
+}
+
 $font-family: "Plus Jakarta Sans";
 $primary1: hsl(1, 90%, 64%);
 $primary2: hsl(219, 85%, 26%);
@@ -13,9 +21,55 @@ $neutral4: hsl(219, 14%, 63%);
 $neutral5: hsl(219, 12%, 42%);
 $neutral6: hsl(224, 21%, 14%);
 
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     font-size: 1rem;
     font-family: $font-family;
     background-color: $neutral1;
     font-weight: 500;
+}
+
+a{
+    font-size: 1rem;
+    text-decoration: none;      
+    color: $neutral4; 
+}
+
+.container{
+    background-color: $white;
+    margin: auto;
+    max-width: 730px;
+}
+
+.col{
+    padding: 25px 16px 45px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.header-wrap{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    span{
+        padding: 3px 12px;
+        background: $primary2;
+        border-radius: 8px;
+        color: $white;
+    }
+
+   
 }
