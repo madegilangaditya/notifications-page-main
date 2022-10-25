@@ -30,16 +30,16 @@ $neutral6: hsl(224, 21%, 14%);
 }
 
 body{
-    font-size: 1rem;
+    font-size: 0.875rem;
     font-family: $font-family;
     background-color: $neutral1;
     font-weight: 500;
 }
 
 a{
-    font-size: 1rem;
+    font-size: 0.875rem;
     text-decoration: none;      
-    color: $neutral4; 
+    color: $neutral5; 
 }
 
 .container{
@@ -70,6 +70,22 @@ header{
         border-radius: 8px;
         color: $white;
     }
+}
 
-   
+.notification-item{
+    margin-bottom: 10px;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+
+    &.unread{
+        background-color: $neutral1;
+    }
+}
+
+.profile-image img{
+    width: 40px;
+    height: 40px;
 }
