@@ -82,6 +82,23 @@ header{
 
     &.unread{
         background-color: $neutral1;
+        p{
+            &:first-child:after{
+                content: "";
+                position: relative;
+                background: $primary1;
+                width: 8px;
+                height: 8px;
+                left: 6px;
+                display: inline-block;
+                border-radius: 50%;
+            }
+        }
+       
+    }
+
+    p{
+        position: relative;
     }
 }
 
