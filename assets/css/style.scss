@@ -34,6 +34,12 @@ body{
     font-family: $font-family;
     background-color: $neutral1;
     font-weight: 500;
+    color: $neutral5;
+    line-height: 1.3575;
+}
+
+h1,strong{
+    color: $neutral6;
 }
 
 a{
@@ -79,19 +85,32 @@ header{
     display: flex;
     align-items: flex-start;
     gap: 14px;
+    p{
+        span{
+            color: $neutral5;
+            font-weight: 800;
 
+            &.group{
+                color: $primary2;
+            }
+        }
+    }
+   
     &.unread{
         background-color: $neutral1;
         p{
-            &:first-child:after{
-                content: "";
-                position: relative;
-                background: $primary1;
-                width: 8px;
-                height: 8px;
-                left: 6px;
-                display: inline-block;
-                border-radius: 50%;
+
+            &:first-child{
+                &:after{
+                    content: "";
+                    position: relative;
+                    background: $primary1;
+                    width: 8px;
+                    height: 8px;
+                    left: 6px;
+                    display: inline-block;
+                    border-radius: 50%;
+                }
             }
         }
        
@@ -99,6 +118,20 @@ header{
 
     p{
         position: relative;
+    }
+
+    .message{
+        padding: 18px 14px;
+        border-radius: 8px;
+        border: 1px solid $neutral3;
+        margin-top: 10px;
+    }
+}
+
+.comment-content{
+    img{
+        width: 40px;
+        min-width: 40px;
     }
 }
 
