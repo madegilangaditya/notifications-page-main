@@ -1,0 +1,28 @@
+@media  all and (min-width:768px) {
+    body{
+        font-size: 1rem;
+    }
+
+    section{
+        padding: 60px 0;
+    }
+    .container{
+        border-radius: 20px;
+    }
+
+    .col{
+        padding: 15px 30px 15px;
+    }
+
+    header{
+        margin-top: 25px;
+    }
+
+    .notification-item{
+        padding: 20px;
+        
+        .message{
+            padding: 20px;
+        }
+    }
+}

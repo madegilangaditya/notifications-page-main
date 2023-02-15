@@ -129,6 +129,8 @@ header{
 }
 
 .comment-content{
+    margin-left: auto;
+    
     img{
         width: 40px;
         min-width: 40px;
@@ -139,3 +141,5 @@ header{
     width: 40px;
     height: 40px;
 }
+
+@import "responsive";
